@@ -1,0 +1,99 @@
+{
+  "riddle_fr": [
+    {
+      "number": 1,
+      "need": null,
+      "type": "texte",
+      "picture": false,
+      "question": "b8 88 ? 98",
+      "answer": "87"
+    },
+    {
+      "number": 1.1,
+      "need": 1,
+      "type": "texte",
+      "picture": true,
+      "question": null,
+      "answer": "16"
+    },
+    {
+      "number": 1.2,
+      "need": 1.1,
+      "type": "texte",
+      "picture": false,
+      "question": "64 chiens sont inscrits pour un concours de beauté canin réservé aux chiens de races, parmi ces 64 chiens de races, 50 % arrivent en huitième de finale. Lors des de cette épreuve, 50% sont éliminés, arrivent les quarts où,face à un jury énervé par le temps pluvieux, encore 50% sont éliminés. Finalement, après des heures de délibérations,le jury décide enfin qui sera envoyé en finale. Combien de pourcentage des finalistes sont en finale ?",
+      "answer": "100"
+    },
+    {
+      "number": 1.3,
+      "need": 1.1,
+      "type": "texte",
+      "picture": false,
+      "question": "Un train A part de Paris vers Bordeaux à 7h00 du matin et roule à 90 km/h. Le même jour à 8h00, un autre train B part de Bordeaux vers Paris et roule à 110 km/h. Lorsqu'ils se croiseront, lequel de ces trains sera le plus proche de Paris ?",
+      "answer": "aucun"
+    },
+    {
+      "number": 1.4,
+      "need": [
+        1.2,
+        1.3
+      ],
+      "type": "texte",
+      "picture": false,
+      "question": "Combien de gouttes d'eau peut-on mettre dans un verre vide ?",
+      "answer": "1"
+    },
+    {
+      "number": 1.5,
+      "need": 1.4,
+      "type": "texte",
+      "picture": false,
+      "question": "Qu'obtient-on si l'on mélange du Calcium, du Nickel, du Carbone et de l'Hélium ?",
+      "answer": "caniche"
+    },
+    {
+      "number": 1.6,
+      "need": 1.5,
+      "type": "texte",
+      "picture": false,
+      "question": "Trouvez l'errreur : 1 2 3 4 5 6 7 8 9",
+      "answer": "errreur"
+    },
+    {
+      "number": 1.7,
+      "need": 1.6,
+      "type": "texte",
+      "picture": false,
+      "question": "Quel nombre divisé par lui-même donne son double ?",
+      "answer": "0.5"
+    },
+    {
+      "number": 1.8,
+      "need": 1.6,
+      "type": "texte",
+      "picture": false,
+      "question": "Si développer une I.A coutait 2000 €,Le support électronique coutant 1990 € de plus que le programme,, combien coute le programme ?",
+      "answer": "5"
+    },
+    {
+      "number": 1.9,
+      "need": 1.6,
+      "type": "texte",
+      "picture": false,
+      "question": "MEDENTREN",
+      "answer": "rendement"
+    },
+    {
+      "number": 1.1,
+      "need": [
+        1.7,
+        1.8,
+        1.9
+      ],
+      "type": "texte",
+      "picture": false,
+      "question": "Bonjour [nom de l'utilisateur] j'aimerai te proposer une enigme ayant un rapport personel avec moi pour une fois.Ayant régler mon réveil analogique pour 10 heures du matin, et comptant me mettre en veille à mhh disons 8h du soir, dans combien d'heure sortirais-je de veille ?",
+      "answer": "2"
+    }
+  ]
+}
