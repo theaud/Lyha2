@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.colors.min.css">
+        <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.min.css">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="framework7/js/framework7.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/fw7_subpage.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="uwrap views">
+            <div class="upage vertical-col left view-main view" id="mainpage">
+                <div class="pages">
+
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_16" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                                <div class="center labeltext">Lyha</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content upage-content content-area" id="page_90_0">
+                            <div class="uib-grid widget uib_w_2 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="1">
+                                <div class="uib-grid-row">
+                                    <div class="uib-grid-cell widget-container">
+                                        <a class="widget uib_w_3 d-margins button" data-uib="framework7/button" data-ver="0"><span>Jouer</span></a>
+                                    </div>
+                                </div>
+                                <div class="uib-grid-row">
+                                    <div class="uib-grid-cell widget-container">
+                                        <a class="button widget uib_w_4 d-margins" data-uib="framework7/button" data-ver="0"><span>Option</span></a>
+                                    </div>
+                                </div>
+                                <div class="uib-grid-row">
+                                    <div class="uib-grid-cell widget-container">
+                                        <a class="button widget uib_w_5 d-margins" data-uib="framework7/button" data-ver="0"><span>Credit</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="upage vertical-col left hidden view" id="Story">
+                <div class="pages">
+
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_17" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_51 d-margins link" data-uib="framework7/button" data-ver="0"><span></span><i class="icon-back icon" data-position="icon only"></i></a>
+                                    </div>
+                                </div>
+                                <div class="center labeltext">Header</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_18 d-margins link" data-uib="framework7/button" data-ver="0"><span></span><i class="icon-bars icon" data-position="icon only"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Chapitre1" class="upage-content vertical-col left hidden page-content">
+
+                            <div class="grid grid-pad urow uib_row_13 row-height-13" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="tarea widget uib_w_20 d-margins" data-uib="media/text" data-ver="0" name="uib_w_20">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div class="text-container">
+                                                <h2>Chapitre 1</h2>
+                                            </div>
+                                        </div><a class="button widget uib_w_21 d-margins" data-uib="framework7/button" data-ver="0"><span>Enigme 1.1</span></a><a class="button widget uib_w_22 d-margins" data-uib="framework7/button" data-ver="0"><span>Enigme 1.2</span></a>
+                                        <a class="button widget uib_w_23 d-margins" data-uib="framework7/button" data-ver="0"><span>Enigme 1.3</span>
+                                            </a><a class="button widget uib_w_37 d-margins" data-uib="framework7/button" data-ver="0"><span>Enigme 1.4</span></a><a class="button widget uib_w_38 d-margins" data-uib="framework7/button"
+                                        data-ver="0"><span>Button</span></a><a class="button widget uib_w_39 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="inner-element uib_w_19 uib_sidebar rightbar bar-bg thumb-bg bar-gutter" data-uib="layout/right_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'right', 'dur':200}" id="sidebar1">
+                            <div class="sidebar-content content-area vertical-col">
+
+                                <div class="tarea widget uib_w_24 d-margins" data-uib="media/text" data-ver="0" name="uib_w_24">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Choix du chapitre</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-pad urow uib_row_15 row-height-15" data-uib="layout/row" data-ver="0">
+                                    <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_36 d-margins" data-uib="media/text" data-ver="0" name="uib_w_36">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <h2>Choix du chapitre</h2>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+
+                                <div class="grid grid-pad urow uib_row_16 row-height-16" data-uib="layout/row" data-ver="0">
+                                    <div class="col uib_col_10 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col"><a class="button widget uib_w_31 d-margins" data-uib="framework7/button" data-ver="0"><span>Chapitre 1</span></a><a class="button widget uib_w_32 d-margins" data-uib="framework7/button" data-ver="0"><span>Chapitre 2</span></a>
+                                            <a class="button widget uib_w_33 d-margins" data-uib="framework7/button" data-ver="0"><span>Chapitre 3</span>
+                                                </a><a class="button widget uib_w_34 d-margins" data-uib="framework7/button" data-ver="0"><span>Chapitre 4</span></a><a class="button widget uib_w_35 d-margins"
+                                            data-uib="framework7/button" data-ver="0"><span>Chapitre 5</span></a>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Chapitre2" class="upage-content vertical-col left hidden page-content">
+                            <div class="grid grid-pad urow uib_row_14 row-height-14" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_8 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="tarea widget uib_w_40 d-margins" data-uib="media/text" data-ver="0" name="uib_w_40">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div class="text-container">
+                                                <h1>Chapitre 2</h1>
+                                            </div>
+                                        </div>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                            <a class="button widget uib_w_26 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a><a class="button widget uib_w_29 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a>
+                        </div>
+                        <div id="Chapitre3" class="upage-content vertical-col left hidden page-content">
+                            <div class="grid grid-pad urow uib_row_17 row-height-17" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_11 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="tarea widget uib_w_41 d-margins" data-uib="media/text" data-ver="0" name="uib_w_41">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div class="text-container">
+                                                <h2>Chapitre 3</h2>
+                                            </div>
+                                        </div>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div id="Chapitre4" class="upage-content vertical-col left hidden page-content">
+                            <div class="grid grid-pad urow uib_row_18 row-height-18" data-uib="layout/row" data-ver="0">
+
+                                <span class="uib_shim"></span>
+                                <div class="col uib_col_14 col-0" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_19 row-height-19" data-uib="layout/row" data-ver="0">
+
+                                <div class="col uib_col_12 col-0" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="tarea widget uib_w_42 d-margins" data-uib="media/text" data-ver="0" name="uib_w_42">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div class="text-container">
+                                                <h2>Chapitre 4&nbsp;</h2>
+                                            </div>
+                                        </div><a class="button widget uib_w_43 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a><a class="button widget uib_w_44 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a>
+                                        <a class="button widget uib_w_45 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span>
+                                            </a>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div id="Chapitre5" class="upage-content vertical-col left hidden page-content">
+                            <div class="grid grid-pad urow uib_row_20 row-height-20" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_15 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="tarea widget uib_w_46 d-margins" data-uib="media/text" data-ver="0" name="uib_w_46">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div class="text-container">
+                                                <h2>Chapitre 5</h2>
+                                            </div>
+                                        </div><a class="button widget uib_w_47 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a><a class="button widget uib_w_48 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a>
+                                        <a class="button widget uib_w_49 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span>
+                                            </a><a class="button widget uib_w_50 d-margins" data-uib="framework7/button" data-ver="0"><span>Button</span></a>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="upage vertical-col left hidden view" id="Riddle">
+                <div class="pages">
+
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_52" data-uib="framework7/header" data-ver="0" id="Enigme">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_53 d-margins link" data-uib="framework7/button" data-ver="0"><span></span><i class="icon-back icon" data-position="icon only"></i></a>
+                                    </div>
+                                </div>
+                                <div class="center labeltext">Enigme</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Image_mod" class="upage-content vertical-col left hidden page-content">
+
+                            <div class="widget uib_w_55 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0"></div>
+                            <div class="widget uib_w_56 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0"></div>
+                            <div class="widget uib_w_57 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0"></div>
+
+                            <div class="grid grid-pad urow uib_row_21 row-height-21" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_17 col-0_12-12" data-uib="layout/col" data-ver="0">
+
+                                    <span class="uib_shim"> </span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_23 row-height-23" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_19 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="widget uib_w_58 scale-image d-margins" data-uib="media/img" data-ver="0">
+                                            <figure class="figure-align">
+                                                <img src="images/Strabburg.jpg" size="80%">
+                                                <figcaption data-position="bottom"></figcaption>
+                                            </figure>
+                                        </div>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                            <div class="buttons-row widget uib_w_59 d-margins" data-uib="framework7/button_group" data-ver="0"><a class="button widget uib_w_60" data-uib="framework7/button" data-ver="0" bound="modal"><span>A</span></a><a class="button widget uib_w_61" data-uib="framework7/button" data-ver="0" bound="modal"><span>B</span></a>
+                                <a class="button widget uib_w_62" data-uib="framework7/button" data-ver="0" bound="modal"><span>C</span>
+                                        </a>
+                            </div><span class="uib_shim"></span>
+                        </div>
+                        <div id="Texte_mod" class="upage-content vertical-col left hidden page-content">
+
+                            <div class="widget uib_w_63 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0"></div>
+                            <div class="widget uib_w_64 widget-container content-area vertical-col uib-card cpad-0 d-margins section-dimension-64" data-uib="layout/card" data-ver="0">
+                                <div class="tarea widget uib_w_65 d-margins" data-uib="media/text" data-ver="0" name="uib_w_65">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons-row widget uib_w_66 d-margins" data-uib="framework7/button_group" data-ver="0"><a class="button widget uib_w_67" data-uib="framework7/button" data-ver="0" bound="modal"><span>A</span></a><a class="button widget uib_w_68" data-uib="framework7/button" data-ver="0" bound="modal"><span>B</span></a>
+                                <a class="button widget uib_w_69" data-uib="framework7/button" data-ver="0" bound="modal"><span>C</span>
+                                        </a>
+                            </div>
+                        </div>
+
+                        <div id="Image_Texte" class="upage-content vertical-col left hidden page-content">
+
+                            <div class="grid grid-pad urow uib_row_26 row-height-26" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_22 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="widget uib_w_74 scale-image d-margins" data-uib="media/img" data-ver="0">
+                                            <figure class="figure-align">
+                                                <img src="images/Strabburg.jpg">
+
+                                                <figcaption data-position="bottom"></figcaption>
+                                            </figure>
+                                        </div>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                            <div class="widget uib_w_70 d-margins" data-uib="framework7/list_block" data-ver="0">
+                                <div class="list-block">
+                                    <ul>
+                                        <li class="widget uib_w_71" data-uib="framework7/input" data-ver="0">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Reponse</div>
+                                                    <div class="item-input">
+                                                        <input type="text" placeholder="Reponse">
+                                                    </div>
+                                                    <div>
+                                                        <input type="submit" placeholder="Reponse">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Texte_Texte" class="upage-content vertical-col left hidden page-content">
+                            <div class="grid grid-pad urow uib_row_27 row-height-27" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_23 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <div class="tarea widget uib_w_75 d-margins" data-uib="media/text" data-ver="0" name="uib_w_75">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div class="text-container">
+                                                <p>{{varialbe}}|Lorem ipsum dolor sit amet,{{varialbe}} consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="widget uib_w_76 d-margins" data-uib="framework7/content_block" data-ver="0">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Reponse</div>
+                                                    <div class="item-input">
+                                                        <input type="text" placeholder="Reponse">
+                                                    </div>
+                                                    <div>
+                                                        <input type="submit" placeholder="Reponse">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <template class="modal outer-element modal_1" data-uib="framework7/modal" data-ver="0"></template>
+                    <template class="modal outer-element modal_2" data-uib="framework7/modal" data-ver="0"></template>
+
+                    <template class="modal outer-element modal_3" data-uib="framework7/modal" data-ver="0"></template>
+
+                </div>
+            </div>
+            <div class="upage vertical-col left hidden view" id="Option">
+                <div class="pages">
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_77" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                                <div class="center labeltext">Header</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content upage-content content-area">
+
+                            <div class="card_grid widget uib_w_78 wrapping-col d-margins flex-basis-78" data-uib="layout/card_grid" data-ver="0">
+                                <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_79 section-dimension-79" data-uib="layout/card" data-ver="0"></div>
+                                <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_80 section-dimension-80" data-uib="layout/card" data-ver="0"></div>
+                                <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_81 section-dimension-81" data-uib="layout/card" data-ver="0"></div>
+                                <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_82 section-dimension-82" data-uib="layout/card" data-ver="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="application/javascript" src="framework7/my-app.js"></script>
+        <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+            <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+                <div class="widget-container content-area vertical-col">
+                    <span class="uib_shim"></span>
+                </div>
+            </div>
+            <span class="uib_shim"></span>
+        </div>
+    </body>
+
+</html>
