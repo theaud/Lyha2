@@ -367,11 +367,7 @@
     });
     
         /* button  .uib_w_111 */
-    $(document).on("click", ".uib_w_111", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#mainpage"); 
-    });
+    
     
         /* button  .uib_w_114 */
     $(document).on("click", ".uib_w_114", function(evt)
@@ -388,11 +384,7 @@
     });
     
         /* button  Button */
-    $(document).on("click", ".uib_w_113", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#mainpage"); 
-    });
+    
     
         /* button  .uib_w_116 */
     
@@ -402,6 +394,89 @@
     {
          /*global activate_subpage */
          activate_subpage("#Chapitre1"); 
+    });
+    
+        /* button  #returnMain */
+    $(document).on("click", "#returnMain", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+    });
+    
+        /* button  #returnMain1 */
+    $(document).on("click", "#returnMain1", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+    });
+    
+        /* button  .uib_w_113 */
+    $(document).on("click", ".uib_w_113", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+    });
+    
+        /* button  Button */
+    $(document).on("click", ".uib_w_130", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+    });
+    
+        /* button  swich image */
+    $(document).on("click", ".uib_w_131", function(evt)
+    {
+       //§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+        
+        var x = document.getElementById("src_image_mod");
+  
+        x.setAttribute("src", "images/Arrow.png");
+        
+    });
+    
+        /* button  .uib_w_111 */
+    
+    
+        /* button  .uib_w_111 */
+    $(document).on("click", ".uib_w_111", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+    });
+    
+        /* button  correct */
+    $(document).on("click", ".uib_w_135", function(evt)
+    {
+        /* Modals are created using custom js 
+         For examples and documentation visit http://www.idangero.us/framework7/docs/modal.html */
+        myApp.modal({
+          title: 'Correct',
+          text: 'Vous avez trouvé la bonne reponse (a coder)',
+          buttons: [ {
+              text: 'enigme suivante',
+              close: true,
+              
+            }
+          ]
+        }) 
+    });
+    
+        /* button  Erreur */
+    $(document).on("click", ".uib_w_136", function(evt)
+    {
+        /* Modals are created using custom js 
+         For examples and documentation visit http://www.idangero.us/framework7/docs/modal.html */
+        myApp.modal({
+          title: 'erreur',
+          text: 'Vous n\'avez pas trouvé la bonne reponse',
+          buttons: [
+            {
+              text: 'Close',
+              close: true
+            }
+          ]
+        }) 
     });
     
     }

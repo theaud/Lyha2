@@ -3462,7 +3462,7 @@ label:empty {
 }
 @media all and (min-width: 324px) {
   .row-height-23 > .col > .content-area {
-    min-height: 280px;
+    min-height: 503px;
   }
 }
 @media all and (min-width: 324px) {
@@ -4279,7 +4279,7 @@ label:empty {
 }
 @media all and (min-width: 324px) {
   .row-height-28 > .col > .content-area {
-    min-height: 100px;
+    min-height: 256px;
   }
 }
 @media all {
