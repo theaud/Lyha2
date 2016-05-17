@@ -479,6 +479,48 @@
         }) 
     });
     
+        /* button  F1 */
+    $(document).on("click", ".uib_w_138", function(evt)//------------------------------------------------Changement de paterne -------------------------------------------------------------------
+    {//destination image + ABC
+        
+        
+         /*global activate_subpage */
+         activate_subpage("#Image_mod"); 
+        
+        var x = document.getElementById("src_image_mod");
+        x.setAttribute("src", "images/Arrow.png");
+          
+        
+    });
+    
+        /* button  F2 */
+    $(document).on("click", ".uib_w_139", function(evt)//------------------------------------------------Changement de paterne -------------------------------------------------------------------
+    {//F2 image + saisie texte
+         /*global activate_subpage */
+         activate_subpage("#Image_Texte"); 
+               var x = document.getElementById("src_Image_Texte");
+        x.setAttribute("src", "images/Arrow.png");
+          
+    });
+    
+        /* button  F3 */
+    $(document).on("click", ".uib_w_140", function(evt)//------------------------------------------------Changement de paterne -------------------------------------------------------------------
+   
+    {//F3 texte+ saisie texte
+         /*global activate_subpage */
+         activate_subpage("#Texte_Texte"); //ID=Enoncer_Texte_Texte
+    });
+    
+        /* button  F4 */
+    $(document).on("click", ".uib_w_141", function(evt)//------------------------------------------------Changement de paterne -------------------------------------------------------------------
+   
+    {//F4 texte + ABC
+         /*global activate_subpage */
+         activate_subpage("#Texte_mod"); //ID=Enoncer_Texte_mod
+        
+        
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
